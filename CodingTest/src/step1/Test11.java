@@ -8,11 +8,11 @@ public class Test11 {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		int a = sc.nextInt();
-		int b = sc.nextInt();
-		int c = sc.nextInt();
+		long a = sc.nextLong();
+		long b = sc.nextLong();
+		long c = sc.nextLong();
 		
-		int sum = a+b+c;
+		long sum = a+b+c;
 		
 		System.out.println(sum);
 		

@@ -7,10 +7,8 @@ public class Test07 {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		String a = sc.next();
+		String name = sc.next();
 		
-		String result =(a.equals("joonas") *1) == 1 ? "joonas??!" :
-			 (a.equals("baekjoon") * 1) == 1 ? "baekjoon??!" :
-				 
+		System.out.println(name+"??!");
 	}
 }
