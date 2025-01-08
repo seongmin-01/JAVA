@@ -78,5 +78,54 @@ public class EncapsuleTest {
 		
 		wr.setBank("유리은행");
 		wr.show();
+		
+		//문제1 Book 
+		Book b1 = new Book("삼국지","나관중","10001",0);
+		b1.show();
+		
+		boolean isOk = b1.borrowBook();
+		if(isOk) {
+			System.out.println(b1.getTitle() +"도서 대출 성공!");
+		}
+		else {
+			System.out.println(b1.getTitle() +  "도서 대출 실패!");
+		}
+		b1.show();
+		
+		Book b2 = new Book("이것이 자바다","신용권","10002",10);
+		b2.show();
+		
+		if(b2.borrowBook()) {
+			System.out.println(b2.getTitle() + "도서 대출 성공!");
+			
+		}
+		else {
+			System.out.println(b2.getTitle() + "도서 대출 실패!");
+		}
+		
+		
+		//문제2 Movie
+		Movie m1 = new Movie("인터스텔라","크리스토퍼놀란",9.12,0);
+		m1.showDetails();
+		
+		boolean Ok = m1.reserveSeat();
+		if(Ok) {
+			System.out.println("예약 가능");
+		}
+		else {
+			System.out.println("좌석이 매진되었습니다.");
+		}
+		
+		Movie m2 = new Movie("타이타닉","제임스카메론",9.5,10);
+		m2.showDetails();
+		
+		boolean Ok2 = m2.reserveSeat();
+		if(Ok2) {
+			System.out.println("예약 가능");
+		}
+		else {
+			System.out.println("좌석이 매진되었습니다.");
+		}
+		
 	}
 }
