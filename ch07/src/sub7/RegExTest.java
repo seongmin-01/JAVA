@@ -5,7 +5,7 @@ import java.util.regex.Pattern;
 /*
  * 날짜:2025/01/14
  * 이름:김성민
- * 내용:Java 정규표현식 클래스 실습하기
+ * 내용:Java 정규표현식 클래스 실습하기z
  */
 public class RegExTest {
 	public static void main(String[] args) {
