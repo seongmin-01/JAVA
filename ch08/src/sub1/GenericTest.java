@@ -19,5 +19,7 @@ public abstract class GenericTest {
 		box2.setFruit(banana);
 		System.out.println(box2.getFruit());
 		
+		
+		
 	}
 }
