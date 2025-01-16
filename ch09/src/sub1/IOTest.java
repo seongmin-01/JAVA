@@ -27,7 +27,7 @@ public class IOTest {
 			while(true) {
 				
 				//입력 스트림으로 파일 데이터 읽기
-				int data = fis.read(); 
+				int data = fis.read();  //read()메서드는 파일의 바이트값을 읽어서 정수로 반환
 				
 				if(data < 0 ) {
 					//파일 데이터가 없을 때
@@ -38,7 +38,7 @@ public class IOTest {
 				System.out.print(ch);
 				
 				// 출력스트림으로 파일 데이터 쓰기
-				fos.write(data);
+				fos.write(data);  //이것도 바이트값으로 작동됨.
 			}
 			
 			// 스트림 해제
